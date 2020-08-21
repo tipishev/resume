@@ -6,25 +6,6 @@ Timofei Tipishev
 * JavaScript/Vue.js amateur
 * Monkey C / Erlang / Haskell hobbyist
 
-Education
-
-Coursera
-Fundamentals of Reinforcement Learning
-Certificate
-2020 – present
-
-Yandex School of Data Analysis (SHAD)
-Diploma
-2013 — 2015
-
-University of Ottawa
-Master's degree, Systems Science
-2011 – 2013
-
-University of Waterloo
-Bachelor's degree, Mathematics / Business Administration
-2006 – 2011
-
 Work Experience
 
 Sportamore
@@ -80,3 +61,22 @@ Python/Flask Backend Developer
 * Integrated with internal services Yandex.Music, Yandex.News, etc.
 * Created data importers from XML, JSON, and custom APIs
 
+
+Education
+
+Coursera
+Fundamentals of Reinforcement Learning
+Certificate
+2020 – present
+
+Yandex School of Data Analysis (SHAD)
+Diploma
+2013 — 2015
+
+University of Ottawa
+Master's degree, Systems Science
+2011 – 2013
+
+University of Waterloo
+Bachelor's degree, Mathematics / Business Administration
+2006 – 2011
