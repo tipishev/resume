@@ -1,0 +1,82 @@
+Timofei Tipishev
+
+* Data Scientist/Engineer/Plumber
+* Senior Python/Django/Flask developer
+* Tech workshops speaker
+* JavaScript/Vue.js amateur
+* Monkey C / Erlang / Haskell hobbyist
+
+Education
+
+Coursera
+Fundamentals of Reinforcement Learning
+Certificate
+2020 – present
+
+Yandex School of Data Analysis (SHAD)
+Diploma
+2013 — 2015
+
+University of Ottawa
+Master's degree, Systems Science
+2011 – 2013
+
+University of Waterloo
+Bachelor's degree, Mathematics / Business Administration
+2006 – 2011
+
+Work Experience
+
+Sportamore
+Senior Software Developer
+2016 – present
+
+* created and launched internal apps and services
+  - supplier orders recommendation service (Flask, scikit-learn, Vue.js)
+  - reporting workflows runner (Apache Airflow, Google Sheets)
+  - drag-and-drop promotional emails creator (Django, Vanilla.js)
+  - product prices control center (Django Rest Framework)
+  - customers data master (numpy, Pandas, pscyopg2)
+  - personalized emails scheduler using (Django, rule.io)
+  - automated UI-tests runner (Selenium, TeamCity)
+
+* Maintained and improved internal services
+  - data warehouse (Python 3, Flask, SQLAlchemy, RabbitMQ)
+  - physical warehouse management system (Django 1.8)
+  - the main website (Python 2, Django 1.11)
+  - system for placing supplier orders (Django 1.11)
+  - deployment server (Fabric, custom blueprints)
+  - TeamCity
+  - various scheduled scripts
+
+* Integrated with third party systems
+  - Swisslog: managing robot-warehouse
+  - Klarna: handling payments and returns
+  - SendGrid: scheduling emails
+  - Rule.io: scheduling emails and SMS
+  - Unifaun: dispatching deliveries to customers
+  - B24: placing purchase orders
+
+* Conducted internal and external workshops on
+  - replacing cron jobs with Airflow
+  - Python debugging (PyCon SE 2019)
+  - Git tips and tricks
+  - freshly launched services and apps
+ 
+
+Paxport (as a Fastdev consultant)
+2015 – 2016
+Java Backend developer
+* Developed airplane seats booking backend using Java8/PostgreSQL/Spring/Vert.x
+* Integrated booking backend with J2EE-monolith using Vert.x (eventBus/HTTP)
+* Developed and supported Java-applications within the monolith
+* Used RAML to design, test, and document restful APIs
+
+Yandex
+2014 – 2015
+Python/Flask Backend Developer
+* Developed and launched a Python/Flask/MongoDB/Celery web service
+* Extended API functionality
+* Integrated with internal services Yandex.Music, Yandex.News, etc.
+* Created data importers from XML, JSON, and custom APIs
+
