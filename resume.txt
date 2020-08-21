@@ -12,7 +12,7 @@ Sportamore
 Senior Software Developer
 2016 – present
 
-* created and launched internal apps and services
+* Created and launched internal apps and services
   - supplier orders recommendation service (Flask, scikit-learn, Vue.js)
   - reporting workflows runner (Apache Airflow, Google Sheets)
   - drag-and-drop promotional emails creator (Django, Vanilla.js)
