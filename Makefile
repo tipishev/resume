@@ -1,7 +1,7 @@
 all: pdf clean
 
 pdf:
-	pdflatex resume.tex
+	xelatex resume.tex
 
 clean:
 	rm resume.log resume.aux
