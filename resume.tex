@@ -129,27 +129,17 @@
 
 % creates a "personal info" CV item with the given left and right column contents, with appropriate vertical space after
 % @param #1 left column content (should be the CV photo)
-% @param #2 middle column content (should be the name and personal info)
-% @param #3 right column content (should be the highlights)
-\newcommand{\cvpersonalinfo}[3]{
-
+% @param #2 right column content (should be the name and personal info)
+\newcommand{\cvpersonalinfo}[2]{
+    % left and right column
     \begin{minipage}[t]{\cvleftcolumnwidth}
         \vspace{0mm} % XXX hack to align to top, see https://tex.stackexchange.com/a/11632
         \raggedleft #1
     \end{minipage}% XXX necessary comment to avoid unwanted space
-
     \hspace{\cvcolumngapwidth}% XXX necessary comment to avoid unwanted space
-
     \begin{minipage}[t]{\cvrightcolumnwidth}
         \vspace{0mm} % XXX hack to align to top, see https://tex.stackexchange.com/a/11632
         #2
-    \end{minipage}
-
-    \hspace{\cvcolumngapwidth}% XXX necessary comment to avoid unwanted space
-
-    \begin{minipage}[t]{\cvrightcolumnwidth}
-        \vspace{0mm} % XXX hack to align to top, see https://tex.stackexchange.com/a/11632
-        \raggedright #3
     \end{minipage}
 
     % space after
@@ -245,76 +235,51 @@
 % personal info
 % -------------
 
-\cvpersonalinfo
-% first column
-{
+\cvpersonalinfo{
     % photo
     \includegraphics[height=36mm]{me-circle.png}
-}
-
-% second column
-{
+}{
     % name
-    \cvname{Timofei Tipishev}
+    \cvname{Fake Name}
 
     % phone number
     \cvpersonalinfolinewithicon{height=4mm}{067-phone.pdf}{
-        +46 762\,333\,946
+        +44 07\,123\,456\,789
     }
 
     % email address
     \cvpersonalinfolinewithicon{height=4mm}{070-envelop.pdf}{
-        tipishev@gmail.com
-    }
-
-    % GitHub
-    \cvpersonalinfolinewithicon{height=4mm}{github.png}{
-        tipishev
+        fake.name@fake.com
     }
 
     % LinkedIn account
     \cvpersonalinfolinewithicon{height=4mm}{458-linkedin.pdf}{
-        timofey-tipishev-1218638b
-}
-% third column
-{
-	% Summary
-	\begin{itemize}[leftmargin=*]
-	\item Data Scientist/Engineer/Plumber
-	\item Senior Python/Django/Flask developer
-	\item Tech workshops speaker
-	\item JavaScript/Vue.js amateur
-	\item Monkey C / Erlang / Haskell hobbyist
-	\end{itemize}
-  }
+        fake-name-123456789
+    }
+
+    % date of birth
+    Born 14 March 1985
 }
 
 
-% Work Experience
+% work experience
 % ---------------
 
 \cvsection{WORK EXPERIENCE}
 
 % Fake Company 2
 \cvitem{
-    \cvdurationstyle{2016 -- present}
+    \cvdurationstyle{October 2013 -- present}
 }{
-    \cvtitle{Senior Software Developer}
+    \cvtitle{Fake senior position}
 
-    Sportamore
+    Fake Company 2, Fake Town
 
     \begin{itemize}[leftmargin=*]
-        \item created and launched internal apps and services 
-	    \begin{itemize}[leftmargin=*]
-		\item supplier orders recommendation service (Flask, scikit-learn, Vue.js)
-		\item reporting workflows runner (Apache Airflow, Google Sheets)
-		\item drag-and-drop promotional emails creator (Django, Vanilla.js)
-		\item product prices control center (Django Rest Framework)
-		\item customers data master (numpy, Pandas, pscyopg2)
-		\item personalized emails scheduler using (Django, rule.io)               	 		
-		\item automated UI-tests runner (Selenium, TeamCity)
-	    \end{itemize}
-        \item maintained and improved internal services 
+        \item fake job description (lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua)
+        \item fake job details (ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat)
     \end{itemize}
 }
 
