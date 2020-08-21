@@ -20,6 +20,7 @@
 \usepackage{graphicx}       % for pictures
 \usepackage{microtype}      % for microtypography stuff
 \usepackage{xcolor}         % for colours
+\usepackage{hyperref}       % for links
 
 
 % margin and column widths
@@ -238,6 +239,14 @@
 \cvpersonalinfo{
     % photo
     \includegraphics[height=24mm]{me-circle.png}
+
+    % \begin{itemize}[leftmargin=*]
+    %     \item Data Scientist/Engineer/Plumber
+    %     \item Senior Python/Django/Flask developer
+    %     \item Tech workshops speaker
+    %     \item JavaScript/Vue.js amateur
+    %     \item Monkey C / Erlang / Haskell hobbyist
+    % \end{itemize}
 }{
     % name
     \cvname{Timofei Tipishev}
@@ -255,7 +264,7 @@
 
     % LinkedIn account
     \cvpersonalinfolinewithicon{height=4mm}{github.png}{
-        tipishev
+	    \href{https://github.com/tipishev}{tipishev}
     }
 }
 
@@ -271,11 +280,11 @@
 }{
     \cvtitle{Senior Software Developer}
 
-    Sportamore, Stockholm
+    Sportamore
 
     % greenfield
     \begin{itemize}[leftmargin=*]
-        \item Created and launched internal apps and services
+        \item Created and launched internal services
 	    \begin{itemize}[leftmargin=*]
 		  \item supplier orders recommendation service (Flask, scikit-learn, Vue.js)
 		  \item reporting workflows runner (Apache Airflow, Google Sheets)
@@ -297,7 +306,7 @@
 
     % integrations
     \begin{itemize}[leftmargin=*]
-        \item Integrated with third party systems
+        \item Integrated with external systems
 	    \begin{itemize}[leftmargin=*]
 		  \item Klarna: handling payments and returns
 		  \item Swisslog: managing robot-warehouse
@@ -309,11 +318,11 @@
     % workshops
 
     \begin{itemize}[leftmargin=*]
-        \item Conducted internal and external workshops
+        \item Performed internal and external workshops
 	    \begin{itemize}[leftmargin=*]
 		  \item replacing cron jobs with Airflow
-		  \item Python debugging (PyCon SE 2019)
-		  \item Git tips and tricks
+		  \item \href{https://github.com/tipishev/python_debugging_workshop}{Python debugging as a text adventure} (PyCon SE 2019)
+		  \item \href{https://github.com/tipishev/git_workshop}{Git tips and tricks}
 		  \item freshly launched services and apps
 	    \end{itemize}
     \end{itemize}
@@ -322,11 +331,11 @@
 
 % Paxport
 \cvitem{
-    \cvdurationstyle{September 2015 -- April 2016}
+    \cvdurationstyle{2015 -- 2016}
 }{
     \cvtitle{Java Backend Developer}
 
-    Paxport as a Fastdev consultant
+    Paxport (as a Fastdev consultant)
 
     \begin{itemize}[leftmargin=*]
 	\item Developed airplane seats booking backend using Java8/PostgreSQL/Spring/Vert.x
@@ -337,11 +346,11 @@
 
 % Yandex
 \cvitem{
-    \cvdurationstyle{July 2014 -- September 2015}
+    \cvdurationstyle{2014 -- 2015}
 }{
     \cvtitle{Python/Flask Backend Developer}
 
-    Paxport as a Fastdev consultant
+    Yandex
 
     \begin{itemize}[leftmargin=*]
 	\item Developed and launched a Python/Flask/MongoDB/Celery web service
@@ -362,7 +371,7 @@
     \cvdurationstyle{2020 -- present}
 }{
     \cvtitle{Reinforcement Learning Specialization}
-    Coursera
+    University of Alberta on Coursera
 }
 
 % SHAD
