@@ -133,16 +133,22 @@
 % creates a "personal info" CV item with the given left and right column contents, with appropriate vertical space after
 % @param #1 left column content (should be the CV photo)
 % @param #2 right column content (should be the name and personal info)
-\newcommand{\cvpersonalinfo}[2]{
+\newcommand{\cvpersonalinfo}[3]{
     % left and right column
     \begin{minipage}[t]{\cvleftcolumnwidth}
         \vspace{0mm} % XXX hack to align to top, see https://tex.stackexchange.com/a/11632
         \raggedleft #1
     \end{minipage}% XXX necessary comment to avoid unwanted space
     \hspace{\cvcolumngapwidth}% XXX necessary comment to avoid unwanted space
-    \begin{minipage}[t]{\cvrightcolumnwidth}
+    % \begin{minipage}[t]{\cvrightcolumnwidth}
+    \begin{minipage}[t]{60mm}
         \vspace{0mm} % XXX hack to align to top, see https://tex.stackexchange.com/a/11632
         #2
+    \end{minipage}
+    % \begin{minipage}[t]{\cvrightcolumnwidth}
+    \begin{minipage}[t]{70mm}
+        \vspace{0mm} % XXX hack to align to top, see https://tex.stackexchange.com/a/11632
+	#3
     \end{minipage}
 
     % space after
@@ -242,13 +248,6 @@
     % photo
     \includegraphics[height=24mm]{me-circle.png}
 
-    % \begin{itemize}[leftmargin=*]
-    %     \item Data Scientist/Engineer/Plumber
-    %     \item Senior Python/Django/Flask developer
-    %     \item Tech workshops speaker
-    %     \item JavaScript/Vue.js amateur
-    %     \item Monkey C / Erlang / Haskell hobbyist
-    % \end{itemize}
 }{
     % name
     \cvname{Timofei Tipishev}
@@ -264,10 +263,18 @@
         +46 762\,333\,946
     }
 
-    % LinkedIn account
+    % GitHub account
     \cvpersonalinfolinewithicon{height=4mm}{github.png}{
 	    \href{https://github.com/tipishev}{tipishev}
     }
+}{
+	\begin{itemize}[leftmargin=*]
+		\item Data Scientist/Engineer/Plumber
+		\item Senior Python/Django/Flask developer
+		\item Tech workshops speaker
+		\item JavaScript/Vue.js amateur
+		\item Monkey C / Erlang / Haskell hobbyist
+	\end{itemize}
 }
 
 
@@ -278,7 +285,7 @@
 
 % Sportamore
 \cvitem{
-    \cvdurationstyle{April 2016 -- present}
+    \cvdurationstyle{2016 -- present}
 }{
     \cvtitle{Senior Software Developer}
 
