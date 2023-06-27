@@ -7,9 +7,6 @@
 % * includes a photo.
 \documentclass[a4paper,10pt]{article}
 
-
-
-
 % package imports
 % ---------------
 
@@ -63,10 +60,10 @@
 
 \newfontfamily{\cvnamefont}{Roboto Medium}
 \newfontfamily{\cvsectionfont}{Roboto Medium}
-\newfontfamily{\cvtitlefont}{Roboto Regular}
-\newfontfamily{\cvdurationfont}{Roboto Light Italic}
-\newfontfamily{\cvheadingfont}{Roboto Regular}
-\setmainfont{Roboto Light}
+\newfontfamily{\cvtitlefont}{Roboto}
+\newfontfamily{\cvdurationfont}{Roboto}
+\newfontfamily{\cvheadingfont}{Roboto}
+\setmainfont{Roboto}
 
 % colours
 \definecolor{cvnamecolor}{HTML}{000000}
@@ -269,12 +266,12 @@
     }
 }{
 	\begin{itemize}[leftmargin=*]
-		\item Erlang/OTP Developer
-		\item Data Scientist/Engineer/Plumber
 		\item Senior Python/Django/Flask developer
+		\item Data Scientist/Engineer/Plumber
+		\item Erlang/OTP Developer
 		\item Tech workshops speaker
 		\item JavaScript/Vue.js amateur
-		\item Monkey C / Haskell hobbyist
+		\item Monkey C / Haskell / Forth hobbyist
 	\end{itemize}
 }
 
@@ -284,9 +281,24 @@
 
 \cvsection{WORK EXPERIENCE}
 
+% Klarna
+\cvitem{
+    \cvdurationstyle{2022 -- present}
+}{
+    \cvtitle{Associate Engineering Manager}
+
+    Klarna
+
+    \begin{itemize}[leftmargin=*]
+       \item Managing a team of 4 software engineers
+       \item Creating data pipelines using AWS, PySpark, and Terraform
+       \item Maintaining and/or decommissioning Java legacy systems
+    \end{itemize}
+}
+
 % Kivra
 \cvitem{
-    \cvdurationstyle{2020 -- present}
+    \cvdurationstyle{2020 -- 2022}
 }{
     \cvtitle{Erlang Developer / Kivra+ Backend Dev Lead}
 
@@ -295,13 +307,7 @@
     \begin{itemize}[leftmargin=*]
        \item Coordinated backend development in a cross-functional team
        \item Integrated with Google Play and App Store to enable paid subscriptions
-       \item Developed backend logic for experimental features 
-	    \begin{itemize}[leftmargin=*]
-		    \item Documents tagging/categorization
-		    \item Document uploads
-		    \item Creating invoices
-	    \end{itemize}
-       using Erlang/OTP, Cowboy, and Riak
+       \item Developed backend logic for paid subscription features using Erlang/OTP, Cowboy, and Riak
     \end{itemize}
 }
 
@@ -329,8 +335,7 @@
         \item Maintained and improved internal services 
 	    \begin{itemize}[leftmargin=*]
 		  \item data warehouse (Python 3, Flask, SQLAlchemy, RabbitMQ)
-		  \item physical warehouse management system (Django 1.8)
-		  \item the main website (Python 2, Django 1.11)
+                  \item warehouse management system and customer-facing commercial front (Django)
 		  \item deployment server (Fabric, custom blueprints)
 	    \end{itemize}
     \end{itemize}
@@ -342,7 +347,7 @@
 }{
     \cvtitle{Java Backend Developer}
 
-    Paxport (as a Fastdev consultant)
+    Paxport AB
 
     \begin{itemize}[leftmargin=*]
 	\item Developed airplane seats booking backend using Java8/PostgreSQL/Spring/Vert.x
@@ -361,12 +366,10 @@
 
     \begin{itemize}[leftmargin=*]
 	\item Developed and launched a Python/Flask/MongoDB/Celery web service
-	\item Extended API functionality
 	\item Integrated with internal services Yandex.Music, Yandex.News, etc.
 	\item Created data importers from XML, JSON, and custom APIs
     \end{itemize}
 }
-
 
 % Education
 % ---------
