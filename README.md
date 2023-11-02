@@ -4,4 +4,6 @@ My fancy LaTeX résumé.
 
 # Usage
 
-Update resume.tex, run `make`.
+1. update `résumé.tex`;
+2. run `make`;
+3. proof-read `résumé.pdf`.
