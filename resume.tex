@@ -77,7 +77,7 @@
 % styles
 \newcommand{\cvnamestyle}[1]{{\Large\cvnamefont\textcolor{cvnamecolor}{#1}}}
 \newcommand{\cvsectionstyle}[1]{{\normalsize\cvsectionfont\textcolor{cvsectioncolor}{#1}}}
-\newcommand{\employer}[1]{{\itshape #1}}
+\newcommand{\employer}[1]{{#1}}
 \newcommand{\cvtitlestyle}[1]{{\large\cvtitlefont\textcolor{cvtitlecolor}{#1}}}
 \newcommand{\cvdurationstyle}[1]{{\small\cvdurationfont\textcolor{cvdurationcolor}{#1}}}
 \newcommand{\cvheadingstyle}[1]{{\normalsize\cvheadingfont\textcolor{cvheadingcolor}{#1}}}
@@ -283,10 +283,10 @@
 % Klarna
 \cvitem{
     \cvdurationstyle{2022 -- present}
-}{
-    \cvtitle{Associate Engineering Manager}
 
     \employer{Klarna}
+}{
+    \cvtitle{Associate Engineering Manager}
 
     \begin{itemize}[leftmargin=*]
        \item Managing a team of 4 software/data engineers
@@ -298,10 +298,10 @@
 % Kivra
 \cvitem{
     \cvdurationstyle{2020 -- 2022}
-}{
-    \cvtitle{Erlang Developer / Kivra+ Backend Dev Lead}
 
     \employer{Kivra}
+}{
+    \cvtitle{Erlang Developer / Kivra+ Backend Dev Lead}
 
     \begin{itemize}[leftmargin=*]
        \item Coordinated backend development in a cross-functional team
@@ -313,10 +313,10 @@
 % Sportamore
 \cvitem{
     \cvdurationstyle{2016 -- 2020}
-}{
-    \cvtitle{Senior Software Developer}
 
     \employer{Sportamore}
+}{
+    \cvtitle{Senior Software Developer}
 
     % greenfield
     \begin{itemize}[leftmargin=*]
@@ -343,10 +343,10 @@
 % Paxport
 \cvitem{
     \cvdurationstyle{2015 -- 2016}
-}{
-    \cvtitle{Java Backend Developer}
 
     \employer{Paxport}
+}{
+    \cvtitle{Java Backend Developer}
 
     \begin{itemize}[leftmargin=*]
 	\item Developed airplane seats booking backend using Java8/PostgreSQL/Spring/Vert.x
@@ -358,10 +358,10 @@
 % Yandex
 \cvitem{
     \cvdurationstyle{2014 -- 2015}
-}{
-    \cvtitle{Python/Flask Backend Developer}
 
     \employer{Yandex}
+}{
+    \cvtitle{Python/Flask Backend Developer}
 
     \begin{itemize}[leftmargin=*]
 	\item Developed and launched a Python/Flask/MongoDB/Celery web service
