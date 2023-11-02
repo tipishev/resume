@@ -1,7 +1,8 @@
 all: pdf clean
 
 pdf:
-	xelatex résumé.tex
+	xelatex resume.tex
+	mv {resume,résumé}.pdf  # so français!
 
 clean:
-	rm -f résumé.{log,aux,out}
+	rm -f resume.{log,aux,out}
