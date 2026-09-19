@@ -1,9 +1,9 @@
 # Résumé
 
-My fancy LaTeX résumé.
+My fancy Typst résumé.
 
 # Usage
 
-1. update `résumé.tex`;
+1. update `resume.typ`;
 2. run `make`;
-3. proof-read `résumé.pdf`.
+3. proof-read `resume.pdf`.
