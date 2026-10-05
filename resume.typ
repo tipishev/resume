@@ -85,12 +85,10 @@
 #cv-personal-info(
   image("me-circle.png", height: 24mm),
   [
+    #set par(spacing: 0pt)
     #cv-name[Timofei Tipishev]
-
     #cv-info-line("070-envelop.pdf", 4mm)[tipishev\@gmail.com]
-
     #cv-info-line("067-phone.pdf", 4mm)[+46 762\u{00A0}333\u{00A0}946]
-
     #cv-info-line("github.png", 4mm)[#link("https://github.com/tipishev")[tipishev]]
   ],
   [
@@ -98,7 +96,7 @@
     - Senior Python/Erlang developer
     - Data Scientist/Engineer
     - Tech workshops speaker
-    - JavaScript, Vue.js amateur
+    - JavaScript, Vue.js, Rust amateur
     - PICO-8/Forth/Monkey C/Haskell hobbyist
   ],
 )
@@ -111,9 +109,9 @@
 // Kambi
 #cv-item(
   [
-    #employer[Tzeract/Kambi]
-
     #cv-duration-style[2025 -- present]
+
+    #employer[Tzeract/Kambi]
   ],
   [
     #cv-title[Software Developer]
@@ -126,9 +124,9 @@
 // Klarna
 #cv-item(
   [
-    #employer[Klarna]
-
     #cv-duration-style[2022 -- 2025]
+
+    #employer[Klarna]
   ],
   [
     #cv-title[Associate Engineering Manager -> Senior Software Developer]
@@ -217,38 +215,42 @@
 #cv-item(
   cv-duration-style[2020],
   [
+    #set par(spacing: 0pt)
     #cv-title[Reinforcement Learning Specialization]
     University of Alberta on Coursera
   ],
-  skip: 1mm,
+  skip: 0.3mm,
 )
 
 // SHAD
 #cv-item(
   cv-duration-style[2013 -- 2015],
   [
+    #set par(spacing: 0pt)
     #cv-title[Diploma]
     Yandex School of Data Analysis
   ],
-  skip: 1mm,
+  skip: 0.3mm,
 )
 
 // uOttawa
 #cv-item(
   cv-duration-style[2011 -- 2013],
   [
+    #set par(spacing: 0pt)
     #cv-title[Master's degree, Systems Science]
     University of Ottawa
   ],
-  skip: 1mm,
+  skip: 0.3mm,
 )
 
 // uWaterloo
 #cv-item(
   cv-duration-style[2006 -- 2010],
   [
+    #set par(spacing: 0pt)
     #cv-title[Bachelor's degree, Mathematics / Business Administration]
     University of Waterloo
   ],
-  skip: 1mm,
+  skip: 0.3mm,
 )
