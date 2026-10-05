@@ -13,7 +13,7 @@
 #let after-item-skip = 2mm
 #let after-section-skip = 1mm
 #let after-name-skip = 2.5mm
-#let after-info-line-skip = 1.5mm
+#let after-info-line-skip = 0.8mm
 #let after-title-skip = 0.8mm
 #let item-sep = 0.6mm
 
@@ -67,9 +67,9 @@
 }
 
 // a standard CV item (job, education entry, etc.)
-#let cv-item(left-content, right-content) = {
+#let cv-item(left-content, right-content, skip: after-item-skip) = {
   cv-row(left-content, right-content)
-  v(after-item-skip)
+  v(skip)
 }
 
 // a title, with space after
@@ -94,6 +94,7 @@
     #cv-info-line("github.png", 4mm)[#link("https://github.com/tipishev")[tipishev]]
   ],
   [
+    #set list(spacing: 1.3mm)
     - Senior Python/Erlang developer
     - Data Scientist/Engineer
     - Tech workshops speaker
@@ -219,6 +220,7 @@
     #cv-title[Reinforcement Learning Specialization]
     University of Alberta on Coursera
   ],
+  skip: 1mm,
 )
 
 // SHAD
@@ -228,6 +230,7 @@
     #cv-title[Diploma]
     Yandex School of Data Analysis
   ],
+  skip: 1mm,
 )
 
 // uOttawa
@@ -237,6 +240,7 @@
     #cv-title[Master's degree, Systems Science]
     University of Ottawa
   ],
+  skip: 1mm,
 )
 
 // uWaterloo
@@ -246,4 +250,5 @@
     #cv-title[Bachelor's degree, Mathematics / Business Administration]
     University of Waterloo
   ],
+  skip: 1mm,
 )
