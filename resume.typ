@@ -133,7 +133,7 @@
 
     - Migrated a 4-person Java development team into data engineering
     - Built high cardinality pipelines with PySpark, Terraform, and AWS Glue/Athena
-    - Revived and repurposed an abandoned Glue/PySpark framework for analytics pipeline
+    - Revived and repurposed a Glue/PySpark framework for analytics pipeline
   ],
 )
 

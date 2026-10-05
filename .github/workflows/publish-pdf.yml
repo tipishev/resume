@@ -1,0 +1,38 @@
+name: Publish resume PDF
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install typst
+        run: |
+          curl -L https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz -o typst.tar.xz
+          tar -xf typst.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+
+      - name: Compile resume
+        run: typst compile resume.typ resume.pdf
+
+      - name: Publish to tipishev.github.io
+        env:
+          TOKEN: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+        run: |
+          git clone https://x-access-token:${TOKEN}@github.com/tipishev/tipishev.github.io.git pages-repo
+          cp resume.pdf pages-repo/resume.pdf
+          cd pages-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resume.pdf
+          if git diff --cached --quiet; then
+            echo "No changes to publish."
+          else
+            git commit -m "Update resume.pdf from tipishev/resume@${GITHUB_SHA}"
+            git push
+          fi
